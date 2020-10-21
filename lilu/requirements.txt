@@ -1,0 +1,5 @@
+requests
+cryptography
+boto3
+botocore
+pg8000

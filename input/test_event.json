@@ -1,0 +1,57 @@
+{
+  "resource": "/receive/{api_key}",
+  "path": "/receive/abc",
+  "httpMethod": "GET",
+  "headers": null,
+  "multiValueHeaders": null,
+  "queryStringParameters": {
+    "state": "HASH",
+    "auth_code": "b"
+  },
+  "multiValueQueryStringParameters": {
+    "state": [
+      "HASH"
+    ],
+    "auth_code": [
+      "b"
+    ]
+  },
+  "pathParameters": {
+    "api_key": "APIKEY"
+  },
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "RESOURCEID",
+    "resourcePath": "/receive/{api_key}",
+    "httpMethod": "GET",
+    "extendedRequestId": "REQUESTID",
+    "requestTime": "15/Jun/2020:00:00:00 +0000",
+    "path": "/receive/{api_key}",
+    "accountId": "123",
+    "protocol": "HTTP/1.1",
+    "stage": "STAGE",
+    "domainPrefix": "DOMAINPREFIX",
+    "requestTimeEpoch": 1592249110000,
+    "requestId": "HASH",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "cognitoIdentityId": null,
+      "apiKey": "APIKEY",
+      "principalOrgId": null,
+      "cognitoAuthenticationType": null,
+      "userArn": "arn:aws:sts::123:assumed-role/USER/USER",
+      "apiKeyId": "APIKEYID",
+      "userAgent": "USERAGENT",
+      "accountId": "123",
+      "caller": "ID:USER",
+      "sourceIp": "SOURCEIP",
+      "accessKey": "ACCESSKEY",
+      "cognitoAuthenticationProvider": null,
+      "user": "ID:USER"
+    },
+    "domainName": "DOMAINPREFIX.DOMAINNAME",
+    "apiId": "APPID"
+  },
+  "body": null,
+  "isBase64Encoded": false
+}

@@ -1,0 +1,40 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'lilu
+
+  Sample SAM Template for lilu
+
+  '
+Globals:
+  Function:
+    Timeout: 60
+Resources:
+  LiluFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: s3://BUCKET/HASH
+      Handler: app.lambda_handler
+      Runtime: python3.7
+      Events:
+        Lilu:
+          Type: Api
+          Properties:
+            Path: /hello
+            Method: get
+Outputs:
+  LiluApi:
+    Description: API Gateway endpoint URL for Prod stage for Lilu function
+    Value:
+      Fn::Sub: https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/
+  LiluFunction:
+    Description: Lilu Lambda Function ARN
+    Value:
+      Fn::GetAtt:
+      - LiluFunction
+      - Arn
+  LiluFunctionIamRole:
+    Description: Implicit IAM Role created for Lilu function
+    Value:
+      Fn::GetAtt:
+      - LiluFunctionRole
+      - Arn

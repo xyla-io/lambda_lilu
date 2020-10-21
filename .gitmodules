@@ -1,0 +1,9 @@
+[submodule "development_packages/data_layer"]
+	path = development_packages/data_layer
+	url = git@github.com:xyla-io/data_layer.git
+[submodule "development_packages/lilu"]
+	path = development_packages/lilu
+	url = git@github.com:xyla-io/lilu.git
+[submodule "development_packages/moda"]
+	path = development_packages/moda
+	url = git@github.com:xyla-io/moda.git
